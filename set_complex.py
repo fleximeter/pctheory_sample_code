@@ -25,10 +25,6 @@ import pctheory.set_complex as set_complex
 import pctheory.transformations as transformations
 
 if __name__ == "__main__":
-    # Gets all TTOs. This is a useful thing to do at the start of a 
-    # program that involves working with pcsets.
-    ro = transformations.get_utos12()
-
     # An array with each of the twelve pitch-classes; the pitch-class numbers
     # align with the index in the array. A convenient way to refer to any pitch-class.
     pc = [pitch.PitchClass12(i) for i in range(12)]

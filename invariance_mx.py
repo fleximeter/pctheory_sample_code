@@ -25,7 +25,7 @@ import pctheory.pitch as pitch
 import pctheory.transformations as transformations
 
 if __name__ == "__main__":
-    # Gets all row operators. This is a useful thing to do at the start of a 
+    # Gets all row operators. This is often a useful thing to do at the start of a 
     # program that involves working with ordered pitch-classes.
     ro = transformations.get_otos12()
 
