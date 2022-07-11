@@ -57,6 +57,11 @@ if __name__ == "__main__":
 
     # It's much more useful to just print the index that we are interested in.
     # We'll choose 6 for each of the invariance matrices.
-    for im in imx:
-        print(f"\n\nInvariance matrix type: {im}\n")
-        imx[im].print([pc[6]])
+    # Also, we'll print the row and the transformation so you can compare
+    # them with the matrix
+    print(f"\n\nInvariance matrix type: 'T'\n")
+    imx['T'].print([pc[6]])
+    print(f"\nRow: {row1}\nT6:  {ro['T6'].transform(row1)}")
+    print(f"\n\nInvariance matrix type: 'I'\n")
+    imx['I'].print([pc[6]])
+    print(f"\nRow: {row1}\nT6I: {ro['T6I'].transform(row1)}")
